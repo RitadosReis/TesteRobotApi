@@ -2,7 +2,7 @@ name: Teste Robot API
 
 on:  push
 
-jobs:
+  jobs:
     tests:
       name: Run tests
       runs-on: ubuntu-latest
