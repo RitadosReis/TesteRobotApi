@@ -1,0 +1,38 @@
+name: Teste Robot API
+
+on:  push
+
+jobs:
+  tests:
+    name: Run tests
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Clonar arquivos do repositório
+      uses: actions/checkout@v2
+   
+    - name: Configurar python   
+      uses: actions/setup-python@v3.12.4
+      with:
+          python-version: 3.x
+   
+    - name: Instalação das dependências
+      run: |
+        pip install --upgrade robotframework
+        pip install --upgrade robotframework-faker
+   
+    - name: Run Robot Framework tests  
+      run: |
+        robot -d results tests
+
+     - name: Salvar o resultado dos testes
+       if: ${{ always() }}  
+      uses: actions/upload-artifact@v3
+      with:
+        name: robot-results
+        path: ./resultsls
+
+
+
+
+
