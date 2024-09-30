@@ -2,7 +2,7 @@
 Documentation    variaveis 
 
 *** Variables ***
-${URL}          https://chips.qacoders-academy.com.br/api/
+${URL}          https://chips.qacoders.dev.br/api-docs/
 ${USER}         sysadmin@qacoders.com
 ${PASSWORD}     1234@Test
 
