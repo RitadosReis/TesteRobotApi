@@ -65,6 +65,7 @@ Cadastro empresa com sucesso
     ${response_get_company}       GET On Session    alias=chips     url=company/${ID}        headers=${headers}
     Status Should Be           200
     Should Be Equal            ${response_get_company.json()["_id"]}       ${ID}  
+    
     Should Be Equal            ${FULLCNPJ}      ${response_get_company.json()["registerCompany"]} 
 
 

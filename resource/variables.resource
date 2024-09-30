@@ -2,10 +2,11 @@
 Documentation    variaveis 
 
 *** Variables ***
-${URL}          https://chips.qacoders.dev.br/api-docs/
-${USER}         sysadmin@qacoders.com
-${PASSWORD}     1234@Test
-
+${URL}              https://chips.qacoders.dev.br/api/
+${USER}             sysadmin@qacoders.com
+${PASSWORD}         1234@Test
+${ID}              
+${TOKEN}
 # ${ZIPCODE}        EMPTY
 # ${CITY}           EMPTY
 # ${STATE}          EMPTY

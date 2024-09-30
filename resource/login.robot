@@ -13,4 +13,6 @@ Login com sucesso
 
     ${response}     POST On Session    alias=chips     url=login    json=${body}
 
+    Status Should Be                    200    
+    Dictionary Should Contain Key       ${response.json()}      token 
     Set Suite Variable                  ${TOKEN}            ${response.json()["token"]}    
