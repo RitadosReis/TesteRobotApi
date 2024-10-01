@@ -21,7 +21,10 @@ jobs:
       run: |
         pip install --upgrade robotframework
         pip install --upgrade robotframework-faker
- 
+        pip install robotframework-requests
+        pip install --upgrade setuptools
+
+
     - name: Executar testes do Robot Framework  
       run: 
         robot -d log tests
