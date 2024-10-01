@@ -24,7 +24,7 @@ jobs:
  
     - name: Executar testes do Robot Framework  
       run: |
-        robot -d results tests
+        robot -d log tests
  
     - name: Salvar o resultado dos testes
       if: ${{ always() }}  
