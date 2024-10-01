@@ -23,7 +23,7 @@ jobs:
         pip install --upgrade robotframework-faker
  
     - name: Executar testes do Robot Framework  
-      run: |
+      run: 
         robot -d log tests
  
     - name: Salvar o resultado dos testes
