@@ -31,6 +31,7 @@ robot -d ./logs <nome_arquivo.robot>
 
 Arquitetura
 
+```bash
 ├── logs
     ├── .gitignore
 │   ├── log.html
@@ -56,4 +57,4 @@ Arquitetura
 │   ├── company
         ├── login_com_sucesso.robot
         ├── post.robot
-
+```
