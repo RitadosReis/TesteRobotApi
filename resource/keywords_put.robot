@@ -12,7 +12,7 @@ Realizar alteração status de true para false
     ${body}    Create Dictionary     status=false
     ${response_put_company}    PUT On Session    alias=chips    url=/company/status/${ID}    json=${body}     headers=${headers} 
 
-    # Converte a resposta para JSON
+    
     ${response_json}          Set Variable    ${response_put_company.json()}
     
     Status Should Be    201 
